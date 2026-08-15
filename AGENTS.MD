@@ -43,6 +43,8 @@ The site must be developed in this order:
 
 Do not start implementation from an unapproved layout. If content is missing but non-blocking, mark it as `TODO_CONTENT` rather than inventing claims, statistics, testimonials, clients, or results.
 
+The current editable Figma layout reference is tracked in `references/design/figma-notes.md`. Treat it as a design reference until owner approval is explicitly recorded.
+
 ## Content And References
 
 - `content/` is reserved for owner-approved copy, content drafts, service text, team material, legal text, media notes, and launch content sources.
@@ -92,8 +94,10 @@ Do not start implementation from an unapproved layout. If content is missing but
 
 ## Tooling Index
 
-- `skills/` is reserved for installed skills only. Do not create hand-written project rules there.
-- `mcp/` is reserved for installed or real MCP-related artifacts only. Do not create hand-written project rules there.
+- `.agents/skills/` contains installed Agent Skill artifacts managed by the skills CLI. Keep each installed skill as a complete directory with its `SKILL.md` and companion files.
+- `skills-lock.json` records installed Agent Skills and should be kept in sync with `.agents/skills/`.
+- `mcp/` should not exist unless real MCP-related artifacts are installed or required.
+- Do not recreate top-level `skills/` for project rules or notes; use `rules/` or approved project docs instead.
 - Document project-specific tool guidance in `rules/` or approved project docs instead.
 
 Never commit credentials, tokens, private keys, database URLs, S3 secrets, production admin passwords, or private MCP connection details.

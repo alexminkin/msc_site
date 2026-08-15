@@ -54,7 +54,8 @@ Before production launch:
 
 ## Forbidden
 
-- Do not create project files under `skills/` unless they are installed skill artifacts.
-- Do not create project files under `mcp/` unless they are real MCP artifacts.
+- Do not create a top-level `skills/` directory for project files, rules, or notes.
+- Do not create project files under `.agents/skills/`; that path is reserved for complete installed Agent Skill directories managed by the skills CLI.
+- Do not create a top-level `mcp/` directory unless it contains real MCP artifacts.
 - Do not create fake credentials, fake MCP connection metadata, fake plugins, or fake installed skills.
 - Do not add architecture outside the fixed stack.

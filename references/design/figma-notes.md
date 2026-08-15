@@ -2,7 +2,9 @@
 
 ## Current Status
 
-- Editable Figma design URL: `TODO_CONTENT`
+- Editable Figma design URL: `https://www.figma.com/design/9ZXhf3VkhxszM2P98ZDUVp`
+- Current test layout root frame ID: `1:2`
+- Current test layout status: test/reference layout only; not approved for code implementation until owner explicitly approves it.
 - Published Figma Site URL reviewed: `https://www.figma.com/site/qc1wgQnVsmSjWD7gKmodGw/MinkinSpace-Consulting`
 - Connector status: published `/site/` URL is not usable for direct Figma design-node edits.
 

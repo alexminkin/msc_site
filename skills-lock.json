@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "skills": {
+    "figma-use": {
+      "source": "openai-curated/figma",
+      "sourceType": "plugin-cache",
+      "skillPath": "skills/figma-use/SKILL.md",
+      "computedHash": "6c0715d4947137d05318c7a862d159ce5011735842ad3b4f84dd98e12749d024"
+    },
+    "figma-design-to-code": {
+      "source": "openai-curated/figma",
+      "sourceType": "plugin-cache",
+      "skillPath": "skills/figma-design-to-code/SKILL.md",
+      "computedHash": "863d576bbe529c45da4b34f954240677919a79e02ade6e1adc16401833b4c9c7",
+      "requestedAs": "figma-implement-design"
+    },
+    "figma-code-connect": {
+      "source": "openai-curated/figma",
+      "sourceType": "plugin-cache",
+      "skillPath": "skills/figma-code-connect/SKILL.md",
+      "computedHash": "d69cfc0e2080351f0182a8f3c2349349fb6696f63cede8972e12ca3b71bafe10",
+      "requestedAs": "figma-code-connect-components"
+    },
+    "figma-create-new-file": {
+      "source": "openai-curated/figma",
+      "sourceType": "plugin-cache",
+      "skillPath": "skills/figma-create-new-file/SKILL.md",
+      "computedHash": "82e0a018692d3d009b5d2c83ecce9203a4ce7dfbdb98b7b13a4f7e5b11832bc2"
+    },
+    "figma-generate-design": {
+      "source": "openai-curated/figma",
+      "sourceType": "plugin-cache",
+      "skillPath": "skills/figma-generate-design/SKILL.md",
+      "computedHash": "7d07e4f4f8fec7012cd82ab7b9e0e062595cf7dbc42fd5e3c7d2be19490d965c"
+    },
+    "figma-generate-library": {
+      "source": "openai-curated/figma",
+      "sourceType": "plugin-cache",
+      "skillPath": "skills/figma-generate-library/SKILL.md",
+      "computedHash": "38d9381d4fb089233eec0a9af829a6444fbe7c8413cfcfbb89d1992a5f08b7fc",
+      "requestedAs": "figma-create-design-system-rules"
+    },
+    "material-ui-nextjs": {
+      "source": "mui/material-ui",
+      "sourceType": "github",
+      "skillPath": "skills/material-ui-nextjs/SKILL.md",
+      "computedHash": "dcee153b8af675ae22b01eb7bd73cab8484990f2889bd190bf5aca55107c67a7"
+    },
+    "material-ui-styling": {
+      "source": "mui/material-ui",
+      "sourceType": "github",
+      "skillPath": "skills/material-ui-styling/SKILL.md",
+      "computedHash": "3aee2bcb4c2ea1fcba3d97f7e43a3208bfc0d477f494d06dad22c1ec25c33ac3"
+    }
+  }
+}
