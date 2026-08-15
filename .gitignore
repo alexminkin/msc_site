@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Production build output
+dist/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env*.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Prisma and database local files
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+prisma/dev.db
+
+# Test and coverage output
+coverage/
+playwright-report/
+test-results/
+
+# Cache directories
+.cache/
+.turbo/
+.vercel/
+.eslintcache
+.stylelintcache
+.swc/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local generated assets
+public/uploads/
+tmp/
+temp/
