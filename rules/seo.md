@@ -1,6 +1,6 @@
 # SEO And GEO Rules
 
-Every indexable public page must support SEO and AI Search / GEO foundations.
+The landing MVP must support SEO and AI Search / GEO foundations.
 
 ## Required SEO
 
@@ -11,21 +11,20 @@ Every indexable public page must support SEO and AI Search / GEO foundations.
 - canonical URL;
 - Open Graph metadata;
 - semantic HTML;
-- internal links;
+- accessible internal anchor links;
 - XML sitemap;
 - robots.txt;
 - favicon.
 
 ## Structured Data
 
-Evaluate and implement where appropriate:
+Evaluate and implement where matching visible landing content exists:
 
 - Organization;
 - ProfessionalService;
 - Service;
-- Person;
-- BreadcrumbList;
-- FAQPage only when matching visible FAQ content.
+- Person only if approved founder/team content is visible;
+- FAQPage only when matching visible FAQ content exists.
 
 Structured data must match visible page content.
 
@@ -34,15 +33,18 @@ Structured data must match visible page content.
 Make these entities explicit and easy to identify:
 
 - MinkinSpace Consulting;
-- services;
-- expertise;
-- founder and team members;
-- problems solved by each service;
-- relevant experience;
-- contact information.
+- AI consulting;
+- business process automation;
+- AI pre-sales systems;
+- IT infrastructure audit;
+- marketing AI analysis;
+- AI Search / GEO;
+- social marketing;
+- contact path.
 
 ## Constraints
 
 - Do not guarantee ranking or inclusion in AI-generated answers.
+- Do not invent claims, clients, results, statistics, or testimonials.
 - Do not represent personal LinkedIn or Instagram profiles as official corporate `Organization.sameAs` unless explicitly approved.
-- Admin pages must be excluded from sitemap and marked `noindex, nofollow`.
+- Do not include admin routes in sitemap because admin routes do not exist in the landing MVP.

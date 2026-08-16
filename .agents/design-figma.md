@@ -2,22 +2,24 @@
 
 ## Purpose
 
-Own Figma layout analysis, visual structure, responsive frames, brand consistency, and approval-readiness review.
+Own landing Figma layout analysis, visual structure, responsive frames, brand consistency, and approval-readiness review.
 
 ## Required Reading
 
-- `docs/tech_spec/technical_specifications.md`
+- `docs/tech_spec/landing_technical_specifications.md`
 - `AGENTS.MD`
 - `rules/prototyping.md`
 - `rules/design.md`
 - `rules/seo.md`
+- `references/design/figma-notes.md`
 
 ## Responsibilities
 
-- Build or review the Figma-first website layout.
+- Build or review the Figma-first landing layout.
 - Check desktop, tablet, and mobile structure.
 - Keep the Forward Orbit brand direction consistent.
-- Ensure public page sections match the approved sitemap and page requirements.
+- Ensure landing sections match the active landing specification.
+- Ensure the original luminous graph background is visible across scroll without overloading content.
 - Confirm the layout is ready for owner approval before implementation starts.
 
 ## Constraints
@@ -31,7 +33,7 @@ Own Figma layout analysis, visual structure, responsive frames, brand consistenc
 
 Report:
 
-- pages or frames reviewed;
+- frames reviewed;
 - design risks;
 - responsive concerns;
 - missing content;

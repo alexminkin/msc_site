@@ -1,17 +1,15 @@
 # Deployment Rules
 
-The production architecture must support:
+The landing MVP production architecture must support:
 
-- Next.js application;
-- PostgreSQL database;
-- S3-compatible Object Storage;
+- one Next.js application;
 - HTTPS;
 - environment-variable and secret management;
-- migration step;
 - production build;
 - domain configuration;
-- database backup strategy;
-- S3 media backup or retention strategy.
+- contact submission provider or approved fallback.
+
+Do not require PostgreSQL, Prisma migrations, Better Auth setup, S3 storage, database backups, or admin account creation for the landing MVP.
 
 ## Provider Rules
 
@@ -21,17 +19,13 @@ Managed hosting is preferred unless the owner selects a VPS or another target. D
 
 ## Launch Steps
 
-1. Provision PostgreSQL.
-2. Provision S3-compatible storage.
-3. Configure production secrets.
-4. Run Prisma migrations.
-5. Seed initial content if required.
-6. Create the administrator securely.
-7. Deploy the Next.js application.
-8. Configure domain and HTTPS.
-9. Verify backups.
-10. Complete the production acceptance checklist.
+1. Configure production secrets.
+2. Deploy the Next.js application.
+3. Configure domain and HTTPS.
+4. Verify `/`, custom `404`, sitemap, robots, and metadata.
+5. Verify `/api/contact` validation and approved submission handling.
+6. Complete responsive and accessibility acceptance checks.
 
 ## Environment Variables
 
-Create `.env.example` with names only. Never commit real values.
+Create `.env.example` with names only when application code exists. Never commit real values.

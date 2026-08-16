@@ -1,6 +1,6 @@
 # Security Rules
 
-Security requirements apply to public APIs, admin pages, authentication, media, and deployment.
+Security requirements apply to the public landing page, `/api/contact`, and deployment configuration.
 
 ## General
 
@@ -8,36 +8,26 @@ Security requirements apply to public APIs, admin pages, authentication, media, 
 - Keep secrets only in environment variables or deployment secret management.
 - Never expose privileged secrets in browser bundles.
 - Validate submitted data server-side with Zod.
-- Use rate limiting or equivalent abuse protection for login and public submission endpoints.
+- Use rate limiting or equivalent abuse protection for public contact submissions.
 - Return safe error responses.
 - Review dependencies before production release.
-- Do not expose PostgreSQL directly to the browser.
+- Avoid logging sensitive message contents in public or long-lived logs unless explicitly approved.
 
-## Admin
+## Landing Contact API
 
-- Verify Better Auth sessions server-side.
-- Exclude admin routes from sitemap.
-- Add `noindex, nofollow` to admin pages.
-- Require authorization for every protected mutation.
-- Avoid logging passwords, session tokens, or secrets.
-- Sanitize rich text if rich text editing is implemented.
-
-## Media
-
-- Keep S3 credentials server-only.
-- Use server-mediated uploads or short-lived presigned URLs generated only after admin authorization.
-- Validate file type and size.
-- Prevent executable uploads.
-- Treat SVG uploads carefully and intentionally.
+- Do not expose email provider, webhook, or API secrets to the browser.
+- Reject unsupported methods.
+- Reject invalid payloads.
+- Do not expose stack traces or provider responses.
+- Do not commit `.env` files with real values.
 
 ## Repository Hygiene
 
 Never commit:
 
 - `.env` with real values;
-- database URLs;
-- S3 credentials;
-- Better Auth secrets;
-- production admin passwords;
+- contact provider secrets;
+- webhook secrets;
 - private MCP tokens;
-- private SSH keys.
+- private SSH keys;
+- future database URLs, S3 credentials, Better Auth secrets, or production admin passwords.

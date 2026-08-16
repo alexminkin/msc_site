@@ -1,6 +1,6 @@
 # Frontend Rules
 
-The application must be a single Next.js Pages Router app written in TypeScript.
+The landing MVP must be a single Next.js Pages Router app written in TypeScript.
 
 ## Stack
 
@@ -11,41 +11,35 @@ The application must be a single Next.js Pages Router app written in TypeScript.
 - Zod
 - npm
 
-Do not use App Router or Tailwind CSS.
+Do not use App Router, Tailwind CSS, or another primary UI framework.
 
-## Public Routes
+## Current Routes
 
-Implement these MVP routes:
+Implement only these landing-version routes:
 
 - `/`
-- `/about`
-- `/services`
-- `/services/business-process-automation`
-- `/services/ai-pre-sales`
-- `/services/it-infrastructure-audit`
-- `/services/marketing-ai-analysis`
-- `/services/ai-search-geo`
-- `/services/social-marketing`
-- `/team`
-- `/contact`
 - custom `404`
+
+Do not implement `/about`, `/team`, `/contact`, `/services/*`, `/admin`, or authentication routes for the landing MVP.
 
 ## Rendering
 
-- Render public business-critical and SEO-critical content server-side.
-- Use `getServerSideProps` for database-backed public content unless the spec is changed.
-- Do not rely on client-side hydration for titles, meta descriptions, H1 content, services, contact data, or primary page copy.
+- Render SEO-critical landing content server-side or statically at build time.
+- Do not rely on client-side fetching for title, meta description, H1, service cards, primary CTA copy, or core section content.
+- Store current landing content in source-controlled files until the specification approves database-backed editing.
 
 ## UI Rules
 
 - Use Material UI as the primary component system.
 - Centralize theme values for palette, typography, spacing, breakpoints, shape, shadows, and component overrides.
-- Keep header, footer, CTA, service cards, process steps, FAQ, team cards, and form components reusable.
-- Ensure navigation, services dropdown, and mobile drawer are keyboard accessible.
-- Keep public and admin components clearly separated.
+- Build landing sections for header, hero, services, approach, credibility placeholder, contact form, and footer.
+- Use anchor navigation to landing sections, including `#services`, `#approach`, and `#contact`.
+- Ensure desktop navigation, mobile navigation, and CTAs are keyboard accessible.
+- Keep the dark-space luminous graph background readable, restrained, and synchronized with the approved Figma layout.
 
 ## Forms
 
 - Use React Hook Form for form state.
 - Use Zod schemas for client validation.
-- Ensure API routes validate the same submitted data server-side.
+- Ensure `/api/contact` validates the same submitted data server-side.
+- Show validation, pending, success, and generic failure states.

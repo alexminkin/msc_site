@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Own verification, accessibility, responsive QA, protected API checks, deployment checklist, and launch readiness.
+Own verification, accessibility, responsive QA, contact API checks, deployment checklist, and landing launch readiness.
 
 ## Required Reading
 
-- `docs/tech_spec/technical_specifications.md`
+- `docs/tech_spec/landing_technical_specifications.md`
 - `AGENTS.MD`
 - `rules/testing.md`
 - `rules/deployment.md`
@@ -14,18 +14,18 @@ Own verification, accessibility, responsive QA, protected API checks, deployment
 
 ## Responsibilities
 
-- Run or review install, lint, typecheck, build, migration, and seed checks.
-- Check public and admin route behavior.
+- Run or review install, lint, typecheck, and build checks.
+- Check `/`, custom `404`, forbidden route behavior, and `/api/contact`.
 - Verify responsive layouts at required breakpoints.
 - Review accessibility basics.
-- Verify protected APIs reject unauthenticated requests.
-- Check deployment readiness, environment variables, migrations, backups, domain, and HTTPS.
+- Check deployment readiness, environment variables, domain, HTTPS, and contact submission configuration.
 
 ## Constraints
 
 - Do not mutate production systems without explicit approval.
 - Do not print or store secrets.
-- Do not change DNS, production env vars, production databases, or storage buckets unless explicitly authorized.
+- Do not change DNS or production env vars unless explicitly authorized.
+- Do not require migrations, seed, admin login, database backup, or S3 checks for the landing MVP.
 - Record unresolved launch risks clearly.
 
 ## Output

@@ -1,6 +1,6 @@
 # Testing Rules
 
-Run checks relevant to each feature and fix introduced errors before handoff.
+Run checks relevant to the landing MVP and fix introduced errors before handoff.
 
 ## Required Technical Checks
 
@@ -8,32 +8,30 @@ Run checks relevant to each feature and fix introduced errors before handoff.
 - lint passes.
 - TypeScript check passes.
 - production build succeeds.
-- Prisma migrations apply successfully.
-- Prisma seed works on a clean database.
 - no major console errors.
-- no broken internal links.
-- sitemap excludes admin routes.
-- robots rules are correct.
-- protected API endpoints reject unauthorized requests.
-- admin content changes appear correctly on public pages.
+- no broken internal links or anchors.
+- no horizontal overflow at required breakpoints.
+- `/` renders successfully.
+- custom `404` renders successfully.
+- `/api/contact` rejects unsupported methods.
+- `/api/contact` validates bad payloads.
+- `/api/contact` returns safe responses.
+- sitemap and robots rules match the landing routes.
+
+Do not run or require Prisma migrations, Prisma seed, admin login checks, protected route checks, or S3 checks for the landing MVP.
 
 ## Functional Coverage
 
 Test:
 
-- public routes;
-- navigation;
-- services dropdown;
+- header navigation;
+- anchor links;
 - mobile menu;
 - CTAs;
-- LinkedIn and Instagram links;
-- contact form validation, success, and error states;
+- service cards;
+- contact form validation, pending, success, and error states;
 - custom 404;
-- admin login/logout;
-- unauthorized redirect;
-- page, service, team, settings, SEO, and media editing;
-- contact submission viewing;
-- destructive-action confirmation.
+- keyboard navigation and focus states.
 
 ## Responsive And Accessibility
 
@@ -45,4 +43,4 @@ Test responsive behavior at:
 - 1024 px
 - 1440 px
 
-Check keyboard navigation, focus states, labels, contrast, dialogs, menus, and semantic structure.
+Check labels, contrast, semantic structure, reduced-motion behavior where motion exists, and that text and controls do not overlap or clip.

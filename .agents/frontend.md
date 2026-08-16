@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Own public Pages Router UI, Material UI components, responsive layout, navigation, forms, and SSR integration after Figma approval.
+Own public landing Pages Router UI, Material UI components, responsive layout, anchor navigation, forms, and rendering after Figma approval.
 
 ## Required Reading
 
-- `docs/tech_spec/technical_specifications.md`
+- `docs/tech_spec/landing_technical_specifications.md`
 - `AGENTS.MD`
 - `rules/frontend.md`
 - `rules/design.md`
@@ -15,24 +15,24 @@ Own public Pages Router UI, Material UI components, responsive layout, navigatio
 
 ## Responsibilities
 
-- Implement public routes and reusable public UI components.
-- Build header, footer, services navigation, mobile navigation, CTAs, service cards, team cards, FAQ, and contact form UI.
-- Use Material UI theme tokens and approved Figma design direction.
-- Keep public content server-rendered where SEO-critical.
-- Coordinate API contracts with the Backend / Admin subagent.
+- Implement the landing page at `/` and the custom `404`.
+- Build header, hero, service cards, approach, credibility placeholder, contact form, footer, mobile navigation, and CTAs.
+- Use Material UI theme tokens and approved Figma landing direction.
+- Keep SEO-critical content server-rendered or statically rendered.
+- Coordinate `/api/contact` contracts with the contact API workstream.
 
 ## Constraints
 
 - Use Next.js Pages Router, TypeScript, Material UI, React Hook Form, and Zod.
 - Do not introduce App Router, Tailwind CSS, or another primary UI framework.
-- Keep public and admin components clearly separated.
-- Do not hardcode business settings that must come from `SiteSettings`.
+- Do not create About, Team, service detail, standalone Contact, admin, or auth routes for the landing MVP.
+- Do not hardcode unsupported claims, metrics, or unapproved proof.
 
 ## Output
 
 Report:
 
-- routes/components changed;
+- landing components changed;
 - assumptions made;
 - local checks run;
 - screenshots or responsive QA performed;

@@ -41,9 +41,10 @@ Avoid:
 - Allow breakpoint-specific changes only for responsive layout behavior, not for separate unsynchronized content or visual direction.
 - Use predictable navigation and clear conversion paths.
 - Use cards only for repeated items or framed tools.
-- Keep admin UI utilitarian, dense, and work-focused.
 - Keep public UI polished, semantic, and business-oriented.
-- Major public pages must include a conversion block before the footer.
+- The landing page must include a conversion block before the footer.
+- The current landing direction uses a dark space consulting/SaaS theme with an original luminous graph background visible across scroll.
+- Keep the graph density high enough to be noticeable while preserving text contrast and avoiding visual overload.
 
 ## Accessibility
 

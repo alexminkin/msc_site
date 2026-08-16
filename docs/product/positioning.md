@@ -10,8 +10,8 @@ MinkinSpace Consulting is a practical consulting partner for businesses that nee
 
 - Practical diagnosis before implementation.
 - Connected services across AI, automation, IT, analytics, marketing, and GEO.
-- Clear service pages with buyer problems, approach, and next step.
-- Admin-editable content for maintainability.
+- One focused landing page that explains the service directions and drives consultation requests.
+- Simple landing MVP without admin, database, or media-library complexity.
 
 ## Messaging Guardrails
 
@@ -22,8 +22,8 @@ MinkinSpace Consulting is a practical consulting partner for businesses that nee
 
 ## Draft Message Architecture
 
-- Homepage: what MinkinSpace does, who it helps, services, process, credibility, CTA.
-- Services overview: compare the six MVP services and guide visitors to detail pages.
-- Service detail: problem, who it is for, approach, deliverables, FAQs if approved, CTA.
-- About/team: founder and team entity clarity, expertise, and human trust signals.
-- Contact: direct request path with clear fields and privacy-safe handling.
+- Hero: what MinkinSpace does, who it helps, and the primary consultation CTA.
+- Services section: compare the six service directions as landing-page cards.
+- Approach section: describe the practical diagnose, prioritize, implement, measure workflow.
+- Credibility section: reserve space for approved proof only.
+- Contact section: direct request path with clear fields and privacy-safe handling.

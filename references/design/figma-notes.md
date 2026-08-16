@@ -3,32 +3,31 @@
 ## Current Status
 
 - Editable Figma design URL: `https://www.figma.com/design/9ZXhf3VkhxszM2P98ZDUVp`
-- Current MVP prototype page: `MVP prototype coverage`
-- Current public Home frame ID: `2:2`
-- Current public Home frame canvas position: separate left-side location at `x=-1700`, `y=80`
-- Current synchronized landing desktop frame: `Main page_v1` (`23:2`)
-- Current synchronized landing mobile frame: `Main page_v1 / Mobile 375` (`30:2`)
-- Current synchronized landing tablet frame: `Main page_v1 / Tablet 768` (`32:2`)
-- Current reusable service detail template frame ID: `2:122`
-- Current contact submissions admin wireframe ID: `3:64`
-- Archived test layouts: deleted from editable Figma file
-- Current layout status: MVP prototype coverage has been updated with an ExactFarming-inspired blue public-site redesign for owner review; not approved for code implementation until owner explicitly approves it.
-- Current design direction note frame: `Design note / ExactFarming-inspired blue direction`
+- Current synchronized landing desktop frame: `Main page_v2 / Dark Space 1440` (`39:2`)
+- Current synchronized landing tablet frame: `Main page_v2 / Dark Space Tablet 768` (`40:2`)
+- Current synchronized landing mobile 375 frame: `Main page_v2 / Dark Space Mobile 375` (`40:127`)
+- Current synchronized landing mobile 320 frame: `Main page_v2 / Dark Space Mobile 320` (`40:248`)
+- Previous synchronized landing frames: `Main page_v1` (`23:2`), `Main page_v1 / Tablet 768` (`32:2`), and `Main page_v1 / Mobile 375` (`30:2`)
+- Current layout status: v2 dark/space landing layout is prepared for owner review; it is not approved for code implementation until owner explicitly approves it.
+- Current design direction note frame: `Design note / UsedeskAI-inspired dark space direction` (`40:368`)
 - Published Figma Site URL reviewed: `https://www.figma.com/site/qc1wgQnVsmSjWD7gKmodGw/MinkinSpace-Consulting`
 - Connector status: published `/site/` URL is not usable for direct Figma design-node edits.
 
-## Required Layout Coverage
+## Current Landing Scope
 
-- Home page
-- About page
-- Services overview
-- Reusable service detail template
-- Team page
-- Contact page
-- Header, footer, navigation, mobile navigation, service menu, and CTA blocks
-- Admin wireframes for login, dashboard, editors, media, settings, SEO, and contact submissions
+Required landing coverage:
 
-Coverage status: frames have been added to the editable Figma file. Remaining gate is owner review and approval.
+- Header and anchor navigation
+- Hero
+- Service overview / capability cards
+- Approach or process section
+- Credibility or proof placeholder section
+- Contact / consultation request section
+- Footer
+- Mobile navigation
+- Contact form states
+
+Do not treat About, Team, service detail pages, standalone Contact page, admin wireframes, or editor screens as current landing MVP requirements.
 
 ## Required Breakpoints
 
@@ -40,17 +39,18 @@ Coverage status: frames have been added to the editable Figma file. Remaining ga
 
 ## Responsive Sync Rule
 
-- `Main page_v1`, `Main page_v1 / Tablet 768`, and `Main page_v1 / Mobile 375` must be treated as synchronized versions of the same page.
-- Copy, navigation, CTA, cards, form fields, footer content, colors, typography decisions, and reusable visual patterns must be updated across all three versions in the same design pass.
+- `Main page_v2 / Dark Space 1440`, `Main page_v2 / Dark Space Tablet 768`, `Main page_v2 / Dark Space Mobile 375`, and `Main page_v2 / Dark Space Mobile 320` must be treated as synchronized versions of the same landing page.
+- Copy, navigation, CTA, cards, form fields, footer content, colors, typography decisions, and reusable visual patterns must be updated across all versions in the same design pass.
 - Breakpoint-specific differences are allowed only for responsive layout, density, ordering, visibility, and interaction behavior.
 - Figma does not automatically mirror arbitrary edits between separate responsive frames unless shared components, variables, or styles are used. When an edit cannot propagate automatically, update the matching frames manually before review.
 
 ## Approval Gate
 
-Code implementation starts only after owner approval of the editable Figma layout.
+Code implementation starts only after owner approval of the editable Figma landing layout.
 
 ## Current Redesign Notes
 
-- Reference inspiration: ExactFarming-style SaaS/product clarity, section rhythm, segmented cards, and abstract system visual treatment.
-- Required adaptation: blue consulting/SaaS palette, MinkinSpace Forward Orbit direction, no copied ExactFarming text, screenshots, agriculture imagery, green palette, or proprietary assets.
+- Reference inspiration: `https://usedeskai.ru` dark SaaS landing rhythm, sticky nav, short numbered sections, hero product/mockup area, glow accents, conversion rhythm, and footer clarity.
+- Required adaptation: dark space consulting/SaaS palette, MinkinSpace Forward Orbit direction, landing anchor navigation, six approved service directions, Material UI-compatible component behavior, no copied UsedeskAI text, screenshots, proprietary assets, pricing claims, metrics, or case claims.
+- Background visual direction: use an original dark blue node-and-connection technical field with luminous graph structure. The graph must be visible through the page while scrolling, but restrained enough to preserve WCAG-oriented text contrast and avoid dense dashboard clutter.
 - Missing unapproved copy, proof, metrics, cases, contact details, and team material remains marked as `TODO_CONTENT`.

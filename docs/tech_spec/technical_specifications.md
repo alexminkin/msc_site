@@ -1,14 +1,16 @@
 # MinkinSpace Consulting — Corporate Website Technical Specification
 
+> Status note, 2026-08-16: this document is not the active source of truth for the current landing MVP. Use `docs/tech_spec/landing_technical_specifications.md` for current implementation decisions. This full corporate website specification is retained only as future scope until the owner explicitly reactivates it.
+
 ## 1. Document Information
 
 - Project: MinkinSpace Consulting Corporate Website
 - Document type: Technical Specification
-- Status: Approved baseline for development
+- Status: Future full corporate website reference, inactive for current landing MVP
 - Version: 1.0
 - Owner: MinkinSpace Consulting
 - Primary implementation tool: Codex / AI coding agent
-- Last updated: 2026-08-14
+- Last updated: 2026-08-16
 
 ---
 
@@ -144,7 +146,8 @@ Next.js Application
 /services/marketing-ai-analysis
 /services/ai-search-geo
 /services/social-marketing
-/team
+/ai-for-business
+/marketing
 /contact
 ```
 
@@ -158,6 +161,7 @@ The architecture should allow later implementation of:
 /insights
 /insights/[slug]
 /industries/[slug]
+/team
 /privacy-policy
 /cookie-policy
 /terms
@@ -176,7 +180,6 @@ The website must include a private administration interface.
 /admin
 /admin/pages
 /admin/services
-/admin/team
 /admin/media
 /admin/seo
 /admin/settings
@@ -203,8 +206,8 @@ Required elements:
 - MinkinSpace Consulting logo;
 - Home;
 - About Us;
-- Services dropdown;
-- Team;
+- AI for Business;
+- Marketing;
 - Contact;
 - primary CTA: `Request a Consultation`;
 - responsive mobile navigation.
@@ -561,11 +564,11 @@ Potential deliverables:
 
 ---
 
-## 13. Team Page
+## 13. Team Page — Future Version
 
 ### 13.1 Goal
 
-Build credibility and show the people behind MinkinSpace Consulting.
+Build credibility and show the people behind MinkinSpace Consulting in a later website version. The current public navigation must not include `Team`.
 
 ### 13.2 Team Member Fields
 
@@ -578,7 +581,7 @@ Build credibility and show the people behind MinkinSpace Consulting.
 - display order;
 - publication status.
 
-Team data must be stored in PostgreSQL and editable from `/admin/team`.
+When implemented, team data must be stored in PostgreSQL and editable from `/admin/team`.
 
 ---
 
@@ -685,7 +688,6 @@ Recommended dashboard shortcuts:
 - Edit Main Page
 - Edit About Us
 - Manage Services
-- Manage Team
 - Manage Media
 - Manage SEO
 - Edit Site Settings
@@ -695,7 +697,7 @@ Recommended dashboard shortcuts:
 
 ### 15.5 Page Editing
 
-Admin must be able to edit Main Page, About Us, Team and Contact content, including:
+Admin must be able to edit Main Page, About Us, and Contact content, including:
 
 - page title;
 - hero title;
@@ -725,9 +727,9 @@ Admin must be able to:
 
 The six MVP services must exist as initial database seed data.
 
-### 15.7 Team Editing
+### 15.7 Team Editing — Future Version
 
-Admin must be able to:
+When the Team page is added in a later website version, admin should be able to:
 
 - add team members;
 - edit team members;
@@ -827,7 +829,6 @@ User / Better Auth entities
 Page
 Service
 ServiceFaq
-TeamMember
 Media
 SiteSettings
 ContactSubmission
@@ -895,7 +896,7 @@ createdAt
 updatedAt
 ```
 
-### 17.5 TeamMember
+### 17.5 TeamMember — Future Version
 
 ```text
 id
@@ -910,6 +911,8 @@ publicationStatus
 createdAt
 updatedAt
 ```
+
+Reserved for the later website version that restores the public Team page.
 
 ### 17.6 SiteSettings
 
@@ -1019,7 +1022,6 @@ pages/api/
 ├── admin/
 │   ├── pages/
 │   ├── services/
-│   ├── team/
 │   ├── media/
 │   ├── settings/
 │   ├── seo/
@@ -1204,7 +1206,8 @@ The logo must remain readable at small sizes.
 │   │   ├── _document.tsx
 │   │   ├── index.tsx
 │   │   ├── about.tsx
-│   │   ├── team.tsx
+│   │   ├── ai-for-business.tsx
+│   │   ├── marketing.tsx
 │   │   ├── contact.tsx
 │   │   ├── services/
 │   │   │   ├── index.tsx
@@ -1214,7 +1217,6 @@ The logo must remain readable at small sizes.
 │   │   │   ├── index.tsx
 │   │   │   ├── pages.tsx
 │   │   │   ├── services.tsx
-│   │   │   ├── team.tsx
 │   │   │   ├── media.tsx
 │   │   │   ├── seo.tsx
 │   │   │   ├── settings.tsx
@@ -1284,7 +1286,6 @@ The exact structure may be refined during implementation, but the project must c
 - ProcessSteps
 - StatsBlock
 - CaseCard
-- TeamCard
 - FAQAccordion
 - RichTextSection
 
@@ -1302,7 +1303,6 @@ The exact structure may be refined during implementation, but the project must c
 - AdminDashboard
 - PageEditorForm
 - ServiceEditorForm
-- TeamMemberEditorForm
 - SiteSettingsForm
 - SEOEditorForm
 - MediaUploader
@@ -1360,7 +1360,7 @@ The site should make the following entities easy to identify:
 - MinkinSpace Consulting;
 - company services;
 - company expertise;
-- founder/team members;
+- founder and team information when approved for the current version;
 - problems solved by each service;
 - relevant experience;
 - contact information.
@@ -1554,7 +1554,7 @@ Test:
 
 - all public routes;
 - navigation;
-- Services dropdown;
+- AI for Business and Marketing navigation items;
 - mobile menu;
 - CTAs;
 - LinkedIn link;
@@ -1566,7 +1566,6 @@ Test:
 - unauthorized redirect;
 - page editing;
 - service editing;
-- team editing;
 - settings editing;
 - media upload;
 - media validation;
@@ -1624,7 +1623,7 @@ Required:
 - admin login error state;
 - admin save error state;
 - unauthorized state;
-- empty service/team/media/admin lists;
+- empty service/media/admin lists;
 - image upload failure state.
 
 Optional:
@@ -1779,7 +1778,8 @@ Codex must:
 - [ ] Marketing AI Analysis
 - [ ] AI Search & GEO
 - [ ] Social Marketing
-- [ ] Team
+- [ ] AI for Business
+- [ ] Marketing
 - [ ] Contact
 - [ ] 404
 
@@ -1787,7 +1787,8 @@ Codex must:
 
 - [ ] Header
 - [ ] Footer
-- [ ] Services navigation
+- [ ] AI for Business navigation
+- [ ] Marketing navigation
 - [ ] Mobile navigation
 - [ ] Global CTA
 - [ ] LinkedIn link
@@ -1800,7 +1801,6 @@ Codex must:
 - [ ] Protected `/admin`
 - [ ] Page management
 - [ ] Service management
-- [ ] Team management
 - [ ] Media management
 - [ ] SEO management
 - [ ] Site settings
@@ -1943,7 +1943,8 @@ Remaining product/design/infrastructure decisions:
 - Services overview;
 - reusable service page;
 - six service records/pages;
-- Team;
+- AI for Business navigation page or section;
+- Marketing navigation page or section;
 - Contact;
 - LinkedIn / Instagram integration.
 
@@ -1954,7 +1955,6 @@ Remaining product/design/infrastructure decisions:
 - dashboard;
 - page editor;
 - service editor;
-- team editor;
 - site settings;
 - SEO editor;
 - contact submissions.
@@ -2012,4 +2012,3 @@ The MVP is done when:
 12. The project builds successfully with npm.
 13. README documents local setup and deployment.
 14. No architectural technology outside the fixed stack has been introduced without approval.
-

@@ -1,12 +1,12 @@
-# Backend / Admin Subagent
+# Contact API / Future Admin Subagent
 
 ## Purpose
 
-Own Prisma, API Routes, Better Auth, admin CRUD, contact submissions, and S3-compatible media integration.
+Own landing contact API validation and safe submission handling. Admin, auth, database, and media infrastructure are future-only for the current landing MVP.
 
 ## Required Reading
 
-- `docs/tech_spec/technical_specifications.md`
+- `docs/tech_spec/landing_technical_specifications.md`
 - `AGENTS.MD`
 - `rules/backend.md`
 - `rules/admin.md`
@@ -16,26 +16,32 @@ Own Prisma, API Routes, Better Auth, admin CRUD, contact submissions, and S3-com
 
 ## Responsibilities
 
-- Define Prisma schema, migrations, and seed data.
-- Configure Better Auth and protected admin routes.
-- Implement API Routes for contact submissions and admin mutations.
-- Implement admin editors for pages, services, team, settings, SEO, media, and contact submissions.
-- Integrate S3-compatible media storage with PostgreSQL metadata.
+- Implement shared Zod validation for contact submissions.
+- Implement `/api/contact` with method checks, validation, abuse protection, safe responses, and approved delivery handling.
+- Document required contact provider environment variables.
+- Review secrets handling and error behavior.
+
+## Out Of Scope
+
+- Prisma schema, migrations, and seed data.
+- Better Auth and protected admin routes.
+- Admin CRUD and editor UI.
+- PostgreSQL persistence.
+- S3-compatible media storage.
+- `/api/admin/*` and `/api/auth/*`.
 
 ## Constraints
 
-- Use Prisma for database access.
 - Validate every mutation server-side with Zod.
 - Keep secrets server-only.
-- Do not expose admin data through unauthenticated APIs.
 - Do not add a separate backend framework.
+- Do not expose stack traces, provider responses, or private contact details in API errors.
 
 ## Output
 
 Report:
 
-- data/API/admin areas changed;
-- migration and seed status;
-- auth and authorization checks;
+- contact API areas changed;
+- validation and abuse-protection behavior;
 - security risks;
 - blockers and required environment variables.

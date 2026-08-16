@@ -1,37 +1,39 @@
 # Implementation Roadmap
 
-## Phase 1: Research And Content Structure
+## Phase 1: Landing Research And Content Structure
 
-- Create content, reference, competitive, product, and planning folders.
-- Conduct preliminary competitive analysis and product hypotheses.
+- Keep competitive analysis, product hypotheses, and service notes as reference inputs.
+- Move final approved copy to `content/approved/`.
 - Keep unsupported business claims as `TODO_CONTENT`.
 
-## Phase 2: Figma Layout
+## Phase 2: Figma Landing Layout
 
-- Obtain or create editable Figma design file.
-- Build public MVP pages, reusable service detail template, shared navigation, CTA blocks, and admin wireframes.
+- Use the editable Figma file as the visual approval source.
+- Finalize the dark-space landing layout with luminous graph background.
 - Review at 320, 375, 768, 1024, and 1440 px.
 - Wait for owner approval before code.
 
 ## Phase 3: App Scaffold
 
 - Scaffold one Next.js Pages Router TypeScript application.
-- Add Material UI theme, reusable public/admin components, React Hook Form, Zod, Prisma, Better Auth, and S3-compatible storage utilities.
-- Keep public and admin areas clearly separated.
+- Add Material UI theme, landing components, React Hook Form, and Zod.
+- Do not add Better Auth, Prisma, PostgreSQL, S3 storage, or admin directories.
 
-## Phase 4: Data And Admin
+## Phase 4: Landing Website
 
-- Define Prisma schema for Better Auth entities, pages, services, FAQs, team members, media, settings, SEO, and contact submissions.
-- Seed six MVP services and approved social URLs.
-- Build admin CRUD and protected API routes.
+- Implement the approved Figma layout at `/`.
+- Add custom `404`.
+- Render SEO-critical landing content statically or server-side.
+- Add sitemap, robots, favicon, canonical metadata, Open Graph metadata, and structured data where visible content supports it.
 
-## Phase 5: Public Website
+## Phase 5: Contact Flow
 
-- Implement approved Figma layout in code.
-- Render SEO-critical public content server-side.
-- Add contact flow, sitemap, robots, canonical metadata, structured data, and custom 404.
+- Implement shared Zod validation for the contact form and `/api/contact`.
+- Add server-side abuse protection and safe typed responses.
+- Connect to an approved email provider, webhook, or approved temporary fallback.
 
 ## Phase 6: QA And Launch Readiness
 
-- Run install, lint, type check, production build, migrations, and seed.
-- Verify responsive behavior, accessibility, protected admin routes, public routes, forms, links, sitemap, and robots.
+- Run install, lint, type check, production build, responsive, accessibility, SEO, and contact API checks.
+- Verify forbidden routes resolve to the custom `404`.
+- Verify production secrets and contact submission handling before launch.

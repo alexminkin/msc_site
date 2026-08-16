@@ -2,4 +2,4 @@
 
 Notes for planned images, logos, alt text, file ownership, and usage rights.
 
-Actual uploaded media will be stored in S3-compatible object storage during implementation. PostgreSQL should store metadata only.
+For the landing MVP, use only approved source-controlled media or externally approved assets. S3-compatible media storage and PostgreSQL media metadata are future full-site concerns only.

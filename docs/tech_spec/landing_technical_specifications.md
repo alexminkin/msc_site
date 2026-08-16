@@ -168,9 +168,12 @@ The landing page should follow the approved Figma landing design direction.
 Current Figma references:
 
 - Editable file: `https://www.figma.com/design/9ZXhf3VkhxszM2P98ZDUVp`
-- Desktop landing frame: `Main page_v1` (`23:2`)
-- Tablet landing frame: `Main page_v1 / Tablet 768` (`32:2`)
-- Mobile landing frame: `Main page_v1 / Mobile 375` (`30:2`)
+- Desktop landing frame: `Main page_v2 / Dark Space 1440` (`39:2`)
+- Tablet landing frame: `Main page_v2 / Dark Space Tablet 768` (`40:2`)
+- Mobile landing frame: `Main page_v2 / Dark Space Mobile 375` (`40:127`)
+- Small mobile landing frame: `Main page_v2 / Dark Space Mobile 320` (`40:248`)
+
+The previous `Main page_v1` frames are retained only as historical references.
 
 ### 7.1 Required Sections
 
@@ -286,10 +289,11 @@ Optional fields:
 
 Use the approved landing Figma direction:
 
-- blue consulting/SaaS palette;
+- dark space consulting/SaaS palette;
 - clean professional layout;
-- abstract systems or dashboard-style visual treatment;
-- ExactFarming-inspired clarity and section rhythm without copying assets or brand elements;
+- original luminous node-and-edge graph background visible across the page while scrolling;
+- restrained technical depth, with enough graph density to be visible without overloading content;
+- UsedeskAI-inspired landing rhythm only as a competitor benchmark, without copying text, layout, images, metrics, or proprietary assets;
 - Forward Orbit logo concept where logo work is included.
 
 Avoid:
@@ -298,6 +302,7 @@ Avoid:
 - AI brain icons;
 - literal gears;
 - overloaded gradients;
+- one-note decorative space effects that reduce readability;
 - fake metrics;
 - dense dashboards that distract from the landing CTA.
 
@@ -650,4 +655,3 @@ If the project later returns to the full corporate-site scope:
 - Final production domain.
 - Analytics provider, if any.
 - Open Graph image source.
-

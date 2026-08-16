@@ -3,29 +3,18 @@
 ## File Access
 
 - Editable Figma design URL is available: `https://www.figma.com/design/9ZXhf3VkhxszM2P98ZDUVp`
-- Required pages and components are in a design file, not only a published Figma Site.
+- Required landing frames and components are in an editable design file, not only a published Figma Site.
 - Owner has reviewed the correct file/version: `TODO_CONTENT`
 
-## Public Pages
+## Landing Sections
 
-- Home
-- About
-- Services overview
-- Reusable service detail template
-- Team
-- Contact
-
-## Admin Wireframes
-
-- Login
-- Dashboard
-- Pages editor
-- Services editor
-- Team editor
-- Media manager
-- SEO editor
-- Settings editor
-- Contact submissions
+- Header and anchor navigation
+- Hero
+- Service overview / capability cards
+- Approach or process section
+- Credibility or proof placeholder section
+- Contact / consultation request section
+- Footer
 
 ## Responsive Frames
 
@@ -39,12 +28,21 @@
 
 - Header
 - Footer
-- Services dropdown
+- Anchor navigation
 - Mobile navigation
-- CTA block before footer on major public pages
+- Primary CTA to `#contact`
 - Contact form states
-- Admin form states
-- Error and empty states
+- Error, success, loading, and empty/TODO content states where relevant
+- Dark luminous graph background visible across scroll
+
+## Not In Current Review Scope
+
+- About page
+- Team page
+- Service detail pages
+- Standalone Contact page
+- Admin wireframes
+- Login or editor screens
 
 ## Approval Result
 

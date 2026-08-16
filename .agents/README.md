@@ -8,11 +8,13 @@ These files are not installed Codex skills and are not MCP definitions. They des
 
 Use a limited subagent model for this project.
 
-The approved technical specification is broad enough to benefit from bounded parallel workstreams:
+For the current landing MVP, the active technical specification is `docs/tech_spec/landing_technical_specifications.md`. The full corporate website specification is future scope only.
 
-- Figma design and visual approval;
-- public frontend implementation;
-- backend, admin, auth, and media;
+Useful bounded workstreams:
+
+- Figma landing design and visual approval;
+- public landing frontend implementation;
+- contact API and validation;
 - SEO / GEO;
 - QA and deployment readiness.
 
@@ -20,11 +22,11 @@ The main agent remains coordinator and final integrator.
 
 ## Available Project Subagents
 
-- `design-figma.md` - Figma layout, visual structure, brand consistency, responsive design, and approval readiness.
-- `frontend.md` - public Pages Router UI, Material UI components, responsive layout, navigation, forms, and SSR integration.
-- `backend-admin.md` - Prisma, API Routes, Better Auth, admin CRUD, contact submissions, and S3 media.
-- `seo-geo.md` - SEO metadata, canonical URLs, sitemap, robots, structured data, semantic headings, and GEO review.
-- `qa-deployment.md` - verification, accessibility, responsive QA, protected API checks, deployment checklist, and launch readiness.
+- `design-figma.md` - landing Figma layout, visual structure, brand consistency, responsive design, and approval readiness.
+- `frontend.md` - public landing Pages Router UI, Material UI components, responsive layout, navigation, forms, and rendering.
+- `backend-admin.md` - landing contact API and future-only admin/database notes.
+- `seo-geo.md` - SEO metadata, canonical URL, sitemap, robots, structured data, semantic headings, and GEO review.
+- `qa-deployment.md` - verification, accessibility, responsive QA, contact API checks, and launch readiness.
 
 ## Delegation Rules
 
@@ -44,12 +46,12 @@ Before Figma approval:
 
 After Figma approval:
 
-- use Frontend and Backend / Admin subagents for parallel implementation;
+- use Frontend and Contact API workstreams for landing implementation;
 - use SEO / GEO and QA / Deployment subagents for independent review.
 
 Before production launch:
 
-- use QA / Deployment, SEO / GEO, and security-focused Backend / Admin review;
+- use QA / Deployment, SEO / GEO, and contact API/security review;
 - production-changing actions still require explicit owner approval.
 
 ## Forbidden
@@ -58,4 +60,4 @@ Before production launch:
 - Do not create project files under `.agents/skills/`; that path is reserved for complete installed Agent Skill directories managed by the skills CLI.
 - Do not create a top-level `mcp/` directory unless it contains real MCP artifacts.
 - Do not create fake credentials, fake MCP connection metadata, fake plugins, or fake installed skills.
-- Do not add architecture outside the fixed stack.
+- Do not add architecture outside the active landing stack.
