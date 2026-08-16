@@ -14,3 +14,8 @@ Access date: 2026-08-15
 | Brand75 AI Consulting | https://brand75.com/services/ai-consulting | Practical AI consulting for small businesses, with audit/roadmap and implementation packaged around lead handling and operations. |
 | OuterBox GEO | https://www.outerboxdesign.com/digital-marketing-services/seo/generative-engine-optimization/ | GEO framed as a layer of search strategy involving technical SEO, content structure, prompt testing, entity work, and conversion paths. |
 | Spearleaf AI Search Optimization | https://www.spearleaf.com/ai-search-optimization/ | AI search optimization positioned around being named by AI engines and maintaining visibility as models change. |
+| IT Team NEBO LLM | https://nebo.team/llm | Russian AI/LLM development page covering LLM, RAG, MCP servers, AI agents, business-process automation, tooling, and case-style proof. |
+| OlineAI | https://oline.ai/ | Voice and text AI assistants with productized channel/industry offers, entry prices, fast launch, integrations, and 152-FZ messaging. |
+| UseDesk AI | https://usedeskai.ru/ | AI support agent positioned around automated ticket closure, ROI calculator, demo CTA, integrations, and pay-for-result economics. |
+| Interika Lab | https://interikalab.com/ | AI business automation positioned around diagnosis, ROI calculation before launch, pilots, integrations, and staged implementation. |
+| ProcessTech | https://processtech.ru/ | Business automation based on RunaWFE with platform-led BPM positioning, pricing, consultation/demo CTAs, and implementation/support stages. |

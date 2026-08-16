@@ -17,6 +17,11 @@ Competitors in AI consulting, automation, and GEO commonly sell clarity in a noi
 | Axiant | Business process automation | Process-first automation and governance | Lead automation messaging with diagnosis before tools. |
 | OuterBox | GEO / SEO | GEO as part of search, content, entity, analytics, and conversion | Connect SEO/GEO to visible content, structured data, and conversion paths. |
 | Qognition | GEO / AI marketing | Broad capability taxonomy and pipeline framing | Use focused MVP service structure with strong internal links. |
+| IT Team NEBO | LLM / RAG / AI agents | Technical implementation breadth, tooling, case-style proof | Compete on business diagnosis and cross-domain consulting, not only stack breadth. |
+| OlineAI | Voice and text AI assistants | Productized AI assistants by channel and industry, visible entry pricing | Make channels, handoffs, and use cases concrete while avoiding a narrow chatbot-vendor position. |
+| UseDesk AI | AI customer support agent | ROI calculator, automation economics, helpdesk/CRM integrations | Explain measurable process economics without inventing savings or automation percentages. |
+| Interika Lab | AI business automation | Diagnosis, ROI before project, pilots, integrations, staged implementation | Treat as close competitor; emphasize broader IT, marketing, GEO, and analytics coverage. |
+| ProcessTech | BPM / process automation | Platform-led RunaWFE automation, transparent pricing, implementation/support stages | Keep MinkinSpace consulting-led and technology-agnostic until diagnosis selects tools. |
 
 ## Website Pattern Findings
 
@@ -25,6 +30,8 @@ Competitors in AI consulting, automation, and GEO commonly sell clarity in a noi
 - Practical AI consulting pages avoid generic AI language and instead describe operational pain points.
 - Credibility is often built through proof, frameworks, named methodologies, or case results; MinkinSpace should use only approved evidence.
 - Service overview pages should make adjacent services easy to compare and route visitors to the right next step.
+- Russian-market AI automation competitors increasingly use calculators, ROI framing, quick diagnostics, pilot/MVP stages, integration lists, and channel-specific assistant examples to make offers concrete.
+- Productized assistant competitors make industry routing, channel coverage, and demo/order CTAs clear.
 
 ## Risks
 
@@ -32,6 +39,7 @@ Competitors in AI consulting, automation, and GEO commonly sell clarity in a noi
 - Unsupported proof claims would violate the project rules and weaken trust.
 - A design that looks too futuristic or dashboard-heavy conflicts with the approved design direction.
 - GEO content must avoid guaranteeing AI-answer inclusion or ranking.
+- Copying competitor proof structures without approved MinkinSpace results, client names, quantified impact, pricing, or launch timelines would violate content rules.
 
 ## Recommended Direction
 

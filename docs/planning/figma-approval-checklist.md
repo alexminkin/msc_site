@@ -2,9 +2,9 @@
 
 ## File Access
 
-- Editable Figma design URL is available.
+- Editable Figma design URL is available: `https://www.figma.com/design/9ZXhf3VkhxszM2P98ZDUVp`
 - Required pages and components are in a design file, not only a published Figma Site.
-- Owner has reviewed the correct file/version.
+- Owner has reviewed the correct file/version: `TODO_CONTENT`
 
 ## Public Pages
 
@@ -48,6 +48,6 @@
 
 ## Approval Result
 
-- Owner approval status: `TODO_CONTENT`
+- Owner approval status: `PENDING_REVIEW`
 - Required changes before code: `TODO_CONTENT`
 - Approved Figma URL: `TODO_CONTENT`

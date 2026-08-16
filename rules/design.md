@@ -36,6 +36,9 @@ Avoid:
 ## Layout And Components
 
 - Design with responsive behavior from 320 px upward.
+- Keep desktop, tablet, and mobile versions of the same page visually and structurally synchronized through shared components, variables, and styles wherever Figma supports it.
+- Reflect copy, navigation, CTA, card, form, and footer changes across all responsive versions in the same design pass.
+- Allow breakpoint-specific changes only for responsive layout behavior, not for separate unsynchronized content or visual direction.
 - Use predictable navigation and clear conversion paths.
 - Use cards only for repeated items or framed tools.
 - Keep admin UI utilitarian, dense, and work-focused.
