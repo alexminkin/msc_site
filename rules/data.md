@@ -8,7 +8,9 @@ The landing MVP does not use Prisma, PostgreSQL, database migrations, seed data,
 - Approved final copy belongs in `content/approved/`.
 - Draft copy belongs in `content/drafts/`.
 - Missing approved copy must remain `TODO_CONTENT`.
-- Service direction material may live in `content/services/`.
+- The main website service text source is `content/services/services_description_en.md`.
+- Use `content/services/services_description_en.md` for service names, descriptions, value statements, scenario copy, and service CTAs unless the owner explicitly replaces it.
+- Other service files in `content/services/` are supporting references and must not override `content/services/services_description_en.md` for public website service copy.
 
 ## Future Scope
 

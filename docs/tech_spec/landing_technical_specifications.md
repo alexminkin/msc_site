@@ -230,6 +230,8 @@ Each card should include:
 - short approved or `TODO_CONTENT` description;
 - business problem or intended value, only if approved.
 
+Use `content/services/services_description_en.md` as the main source for website service text, including service names, descriptions, value statements, scenario copy, and service CTAs.
+
 No service detail routes are required in this version.
 
 ### 7.5 Approach
@@ -404,6 +406,8 @@ Do not rely on client-side fetching for:
 - H1;
 - primary service descriptions;
 - core CTA copy.
+
+Primary service descriptions must come from `content/services/services_description_en.md` unless a newer owner-approved source explicitly replaces it.
 
 ### 10.3 Forms
 

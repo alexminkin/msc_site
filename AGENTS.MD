@@ -48,6 +48,7 @@ The current editable Figma layout reference is tracked in `references/design/fig
 ## Content And References
 
 - `content/` is reserved for owner-approved copy, content drafts, service text, team material, legal text, media notes, and launch content sources.
+- The main website service text source is `content/services/services_description_en.md`; use it for public service names, descriptions, value statements, scenario copy, and service CTAs unless the owner explicitly replaces it.
 - `references/design/` is reserved for design references, benchmark screenshots, visual research, UI examples, brand inspiration, and notes about current design best practices.
 - Treat files in these folders as reference inputs, not as automatic implementation authority.
 - Do not copy third-party designs, images, text, or proprietary material directly into the product unless rights and approval are clear.
